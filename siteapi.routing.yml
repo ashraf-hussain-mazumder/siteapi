@@ -1,0 +1,7 @@
+siteapi.site_api:
+  path: '/page_json/{sitekey}/{nid}'
+  defaults:
+    _controller: '\Drupal\siteapi\Controller\SiteApiController::siteApi'
+    _title: 'Page in Json Format'
+  requirements: 
+    _permission: 'access content'
